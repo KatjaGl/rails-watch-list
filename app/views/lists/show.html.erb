@@ -1,9 +1,9 @@
-<%# <div class="position-relative"> %>
-  <%# <div class="card-category card-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('basilic-21b9c920e0d5548f08373b85b1121c40.jpg') %>"> %>
-    <%# <h1><%= @list.name %></h1> %>
-  <%# </div> %>
-    <%# <span class="movie-tag"><%= pluralize(@list.movies.size, 'movie') %></span> %>
-<%# </div>  %>
+<div class="position-relative">
+  <div class="card-category card-large" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('basilic-21b9c920e0d5548f08373b85b1121c40.jpg') %>)">
+    <h1><%= @list.name %></h1>
+  </div>
+    <span class="movie-tag"><%= pluralize(@list.movies.size, 'movie') %></span>
+</div>
 <div class="container mb-5">
   <div class="d-flex justify-content-between my-4">
     <span class="mb-2 d-block"><small><em class="text-muted"><%= "You haven't saved any movies yet!" if @list.movies.empty? %></em></small></span>
