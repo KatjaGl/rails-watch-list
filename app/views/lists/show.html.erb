@@ -7,3 +7,4 @@
 <% content_for(:name) do %>
   List | <%= @list.name %>
 <% end %>
+<%= render "bookmarks/new", list: @list %>
